@@ -1,3 +1,4 @@
+import 'package:expenseTrackker/widgets/user_transaction.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -21,7 +22,6 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
             child: Card(
@@ -30,10 +30,7 @@ class MyHomePage extends StatelessWidget {
             ),
             width: double.infinity,
           ),
-          Card(
-            child: Text('Card List'),
-            color: Colors.amber,
-          )
+          UserTransation(),
         ],
       ),
     );
